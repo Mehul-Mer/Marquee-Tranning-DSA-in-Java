@@ -22,7 +22,6 @@ public class LinearSearch {
                 return true;
             }
         }
-        sc.close();
         return false;  
     }
 }

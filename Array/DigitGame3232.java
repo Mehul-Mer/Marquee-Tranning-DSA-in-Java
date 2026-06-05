@@ -1,5 +1,6 @@
+import java.util.Scanner;
 public class DigitGame3232 {
-    public boolean Game(int[] arr,int n){
+    public static boolean Game(int[] arr,int n){
         int sum1 = 0;
         int sum2 = 0;
         for(int i=0 ; i<n ; i++){
@@ -12,6 +13,13 @@ public class DigitGame3232 {
         return sum1 != sum2;
     }
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for(int i = 0; i<n ; i++){
+            arr[i] = sc.nextInt();
+        }
+        Game(arr,n);
         
     }
 }
